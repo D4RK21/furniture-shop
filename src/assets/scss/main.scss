@@ -7,17 +7,15 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.btn {
-  color: #333;
-  font-weight: 500;
-  font-size: 16px;
+.baner-block {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 32px 0;
 }
 
-.basket {
-  width: 24px;
-  height: 24px;
-}
-
-.wrapper {
-  margin: 150px 0;
+.contaner-baner {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }

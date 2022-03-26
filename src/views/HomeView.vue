@@ -1,6 +1,3 @@
 <template>
-  <The-Header />
-  <div class="wrapper">
-    <The-Slider />
-  </div>
+  <h1>qe</h1>
 </template>
