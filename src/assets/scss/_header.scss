@@ -1,0 +1,51 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.container-header {
+  position: relative;
+  padding: 14px 0;
+  background: #fff;
+  border-bottom: 1px solid #979797;
+}
+
+.content-header {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 3.33vw;
+  padding-right: 3.33vw;
+  justify-content: space-between;
+}
+
+.link-header {
+  img {
+    margin-right: 24px;
+    margin-left: -12px;
+    width: 264px;
+    height: auto;
+  }
+}
+
+.header-left,
+.header-buttons {
+  display: flex;
+}
+
+.button-header {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.header-basket {
+  span {
+    font-size: 10px;
+  }
+  svg {
+    margin-left: 6px;
+  }
+}

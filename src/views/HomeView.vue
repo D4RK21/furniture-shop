@@ -1,3 +1,6 @@
 <template>
-  <div class="home"></div>
+  <The-Header />
+  <div class="wrapper">
+    <The-Slider />
+  </div>
 </template>
