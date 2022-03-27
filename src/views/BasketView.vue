@@ -209,7 +209,9 @@ export default {
   },
   mounted() {
     this.items = this.getProducts;
-    this.totalSum = 1000;
+    this.items.forEach((item) => {
+      this.totalSum += Number(item.price.replace(" ", ""));
+    });
   },
 };
 </script>
