@@ -21,8 +21,25 @@
           :count="1"
         />
       </div>
+      <div class="summary" v-if="items.length != 0">
+        <div class="summary-item">
+          <span>Товары</span>
+          <span>{{ totalSum }}&nbsp;₽</span>
+        </div>
+        <div class="summary-item">
+          <span>Скидка по акции</span>
+          <span>- 0 ₽</span>
+        </div>
+        <div class="summary-item bold">
+          <span>Итого</span>
+          <span>{{ totalSum }}&nbsp;₽</span>
+        </div>
+        <a href="#checkout" class="summary-btn">
+          <button class="btn-red outlined summary-btn">Перейти к оформлению</button>
+        </a>
+      </div>
     </section>
-    <section class="checkout" v-if="items.length != 0">
+    <section class="checkout" id="checkout" v-if="items.length != 0">
       <form>
         <div class="section-title">Оформление заказа</div>
         <div class="checkout-item">
@@ -113,13 +130,57 @@
             <input type="text" class="checkout-input" placeholder="ФИО" required />
           </div>
         </div>
-        <div class="checkout-item">
-          <div class="checkout-row">
+        <div class="summary-footer-cont">
+          <div class="summary">
+            <div class="summary-item">
+              <span>Товары</span>
+              <span>{{ totalSum }}&nbsp;₽</span>
+            </div>
+            <div class="summary-item">
+              <span>Скидка по акции</span>
+              <span>- 0 ₽</span>
+            </div>
+            <div class="summary-item bold">
+              <span>Итого к оплате</span>
+              <span>{{ totalSum }}&nbsp;₽</span>
+            </div>
+            <button type="submit" class="btn-red summary-btn">Оформить заказ</button>
+            <div class="services">
+              <div class="service-title">Услуги:</div>
+              <div class="service">
+                <span>Доставка</span>
+                <span>2000 ₽</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="agreements">
+          <div class="agreement">
+            <label class="checkbox">
+              <input type="checkbox" checked />
+              <span class="danger"></span>
+            </label>
+            <span class="agreement-text">Я подтверждаю своё согласие на сбор и обработку персональных данных</span>
+          </div>
+          <div class="agreement">
+            <label class="checkbox">
+              <input type="checkbox" checked />
+              <span class="danger"></span>
+            </label>
+            <span class="agreement-text"
+              >Вы согласны получать все извещения и уведомления по Вашему заказу путем смс-уведомления, сообщений через
+              приложение-мессенджер Viber на телефонный номер и электронную почту, указанные в разделе «Оформление заказа»?</span
+            >
+          </div>
+          <div class="agreement">
             <label class="checkbox">
               <input type="checkbox" />
               <span class="danger"></span>
             </label>
-            <span class="checkbox-text"></span>
+            <span class="agreement-text"
+              >Вы согласны получать информацию об акциях, скидках, интересных предложениях путем смс-уведомления, сообщений через
+              приложение-мессенджер Viber на телефонный номер и электронную почту, указанные в разделе «Оформление заказа»?</span
+            >
           </div>
         </div>
       </form>
@@ -142,11 +203,13 @@ export default {
   data: () => {
     return {
       items: ["1"],
+      totalSum: 0,
       isCourier: true,
     };
   },
   mounted() {
     this.items = this.getProducts;
+    this.totalSum = 1000;
   },
 };
 </script>
