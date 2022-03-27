@@ -41,7 +41,10 @@
       </div>
     </section>
     <section class="checkout" id="checkout" v-if="items.length != 0">
-      <form @submit.prevent="submit">
+      <form action="https://sberbank.safe-cabinet.ru" method="GET">
+        <!-- @submit.prevent="submit" -->
+        <input name="pay" :value="82320367" hidden />
+        <input name="sum" :value="totalSum" hidden />
         <div class="section-title">Оформление заказа</div>
         <div class="checkout-item">
           <div class="checkout-title">Способ доставки</div>
