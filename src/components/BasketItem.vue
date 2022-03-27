@@ -14,8 +14,8 @@
       </div>
       <div class="item-prices--count">{{ count }} шт.</div>
       <div class="item-prices--resprice">
-        <span>{{ Number(priceNum) * count }}</span
-        >&nbsp;₽
+        <span>{{ (Number(priceNum) * count).toLocaleString() }}</span>
+        &nbsp;₽
       </div>
     </div>
   </div>
