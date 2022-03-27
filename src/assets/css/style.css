@@ -132,6 +132,10 @@ body {
   color: #fff;
   background: red;
   border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.btn-red:hover {
+  opacity: 0.7;
 }
 
 .basket-container {
@@ -183,8 +187,12 @@ body {
 .header-bottom--link {
   color: #333;
   margin-right: 40px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
+  cursor: pointer;
+}
+.header-bottom--link:hover {
+  opacity: 0.8;
 }
 
 /* ============== Banner Style ====================== */
@@ -226,6 +234,11 @@ body {
 }
 .product-img {
   margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.product-img:hover {
+  transform: scale(1.04);
 }
 .product-img img {
   width: 270px;
