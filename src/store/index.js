@@ -8,6 +8,9 @@ export default createStore({
     getProducts: (state) => {
       return state.basket;
     },
+    getCount: (state) => {
+      return state.basket.length;
+    },
   },
   mutations: {
     addProduct: (state, product) => {

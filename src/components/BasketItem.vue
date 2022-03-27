@@ -14,7 +14,7 @@
       </div>
       <div class="item-prices--count">{{ count }} шт.</div>
       <div class="item-prices--resprice">
-        <span>{{ price }}</span
+        <span>{{ Number(priceNum) * count }}</span
         >&nbsp;₽
       </div>
     </div>
@@ -30,6 +30,14 @@ export default {
     deleteProduct() {
       this.dellProduct(this.id);
     },
+  },
+  data: () => {
+    return {
+      priceNum: 0,
+    };
+  },
+  mounted() {
+    this.priceNum = this.price.replace(" ", "");
   },
 };
 </script>

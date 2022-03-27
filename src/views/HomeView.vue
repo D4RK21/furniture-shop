@@ -8,13 +8,15 @@
         </div>
         <the-product
           class="no-mobile"
-          title="Угловой диван Атланта Люкс рогожка Malmo серый"
-          price="32 999"
-          oldPrice="39 999"
-          sale="18"
-          :img="require('@/assets/img/product1.jpg')"
-          :retings="5"
-          reviews="12 отзывов"
+          :key="products.sofas[0].id"
+          :id="products.sofas[0].id"
+          :title="products.sofas[0].title"
+          :price="products.sofas[0].price"
+          :oldPrice="products.sofas[0].oldPrice"
+          :sale="products.sofas[0].sale"
+          :img="products.sofas[0].img"
+          :retings="products.sofas[0].retings"
+          :reviews="products.sofas[0].reviews"
         />
       </div>
     </section>
@@ -238,6 +240,51 @@
             :retings="item.retings"
             :reviews="item.reviews"
           />
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-text">
+          <div class="contact-title">
+            <h1>Контакты Много Мебели</h1>
+          </div>
+          <div class="contact-desc">
+            <p>Есть вопросы или хотите сообщить о проблеме с продуктом или сервисом Много Мебели? Мы всегда рады помочь.</p>
+          </div>
+        </div>
+      </div>
+      <div class="contacts-info">
+        <div class="container">
+          <ul class="contacts-ul">
+            <li>
+              <h2>Центральный офис Много Мебели</h2>
+              <p>Саратовская область, Саратовский район, с. Клещевка, литер Г2.</p>
+            </li>
+            <li>
+              <h2>Адреса салонов</h2>
+              <p>Узнайте адрес ближайшего к вам салона Много Мебели.</p>
+            </li>
+            <li>
+              <h2>Телефон и эл. почта</h2>
+              <p>
+                <a href="tel:84956422030&nbsp;">8 <span>(</span>495<span>)</span> 642-20-30&nbsp;</a>
+                - ежедневно c 07:00 до 21:00. Email: <a href="mailto:zakaz@mnogomebeli.com">zakaz@mnogomebeli.com</a>
+              </p>
+            </li>
+            <li>
+              <h2>Чат</h2>
+              <p>Наши сотрудники отвечают на ваши вопросы ежедневно с 07:00 до 19:00 по Москве.</p>
+            </li>
+            <li>
+              <h2>Юридический адрес</h2>
+              <p>ООО "Много Мебели", Россия, 410531, Саратовская область, с. Клещевка, литер Г2.</p>
+            </li>
+            <li>
+              <h2>Вопросы и ответы</h2>
+              <p>Ответы на часто задаваемые вопросы о Много Мебели.</p>
+            </li>
+          </ul>
         </div>
       </div>
     </section>

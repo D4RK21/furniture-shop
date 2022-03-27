@@ -7,8 +7,8 @@
             <img :src="require('@/assets/img/logo.svg')" alt="" />
           </router-link>
         </div>
-        <div class="header-buttons">
-          <button type="button" class="btn-red">Акции</button>
+        <div class="header-buttons" v-if="bottom">
+          <button type="button" class="btn-red"><a href="#contact">Контакты</a></button>
         </div>
       </div>
       <div class="container">
@@ -20,6 +20,7 @@
               ></path>
             </svg>
             <span>Корзина</span>
+            <span class="count">{{ getCount }}</span>
           </div>
         </router-link>
       </div>
@@ -75,7 +76,11 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 export default {
   props: ["bottom"],
+  computed: {
+    ...mapGetters(["getCount"]),
+  },
 };
 </script>

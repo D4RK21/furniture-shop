@@ -157,6 +157,7 @@ body {
 }
 
 .basket-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   transition: 0.25s ease;
@@ -620,6 +621,21 @@ body {
   white-space: nowrap;
 }
 
+.basket-container .count {
+  position: absolute;
+  color: #fff;
+  background: red;
+  display: flex;
+  font-size: 10px;
+  border-radius: 50%;
+  top: -10px;
+  width: 15px;
+  height: 15px;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+}
+
 .prices-col-new {
   font-size: 20px;
   white-space: nowrap;
@@ -722,6 +738,55 @@ body {
   margin-left: 10px;
 }
 
+.contact {
+  margin-top: 40px;
+}
+
+.contact-text {
+  padding-bottom: 56px;
+}
+
+.contact-title {
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 40px;
+}
+
+.contact-desc {
+  font-size: 18px;
+}
+
+.contacts-info {
+  border-top: 1px solid hsla(0, 0%, 83.9%, 0.5);
+  padding: 56px 0;
+}
+
+.contacts-ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8.88vw;
+  margin-top: -56px;
+}
+
+.contacts-ul li {
+  width: calc(50% - 8.88vw);
+  margin-left: 8.88vw;
+  margin-top: 56px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.contacts-ul li h2 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.contacts-ul li p {
+  font-weight: 300;
+  font-size: 18px;
+}
+
 /* ============== Media ====================== */
 
 @media screen and (max-width: 1300px) {
@@ -772,5 +837,12 @@ body {
     width: 100%;
     margin-bottom: 10px;
     justify-content: flex-end;
+  }
+  .contacts-ul {
+    flex-direction: column;
+    padding: 0 40px;
+  }
+  .contacts-ul li {
+    width: 100%;
   }
 }

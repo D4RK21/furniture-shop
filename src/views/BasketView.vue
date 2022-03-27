@@ -41,7 +41,7 @@
       </div>
     </section>
     <section class="checkout" id="checkout" v-if="items.length != 0">
-      <form>
+      <form @submit.prevent="submit">
         <div class="section-title">Оформление заказа</div>
         <div class="checkout-item">
           <div class="checkout-title">Способ доставки</div>
@@ -208,11 +208,16 @@ export default {
       isCourier: true,
     };
   },
+  methods: {
+    submit() {
+      alert("test");
+    },
+  },
   mounted() {
     window.scrollTo(0, 0);
     this.items = this.getProducts;
     this.items.forEach((item) => {
-      this.totalSum += Number(item.price.replace(" ", ""));
+      this.totalSum += Number(item.price.replace(" ", "")) * item.count;
     });
   },
 };
