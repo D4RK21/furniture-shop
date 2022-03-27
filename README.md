@@ -1,4 +1,4 @@
-# furniture-shop
+# furniture
 
 ## Project setup
 ```

@@ -1,3 +1,3 @@
 <template>
-  <h1>qe</h1>
+  <div class="home"></div>
 </template>
