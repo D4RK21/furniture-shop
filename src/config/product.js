@@ -1,12 +1,28 @@
 export default {
   sofas: [
     {
+      img: require("@/assets/img/product2.jpg"),
+      title: "Угловой диван BOSS MAX велюр Alkantara серый",
+      price: "74 999",
+      oldPrice: "99 999",
+      sale: "25",
+      retings: 5,
+    },
+    {
+      img: require("@/assets/img/product3.jpg"),
+      title: "Диван BOSS угол Monolit синий",
+      price: "79 999",
+      oldPrice: "68 999",
+      sale: "14",
+      retings: 5,
+    },
+    {
       img: require("@/assets/img/product1.jpg"),
       title: "Угловой диван Атланта Люкс рогожка Malmo серый",
       price: "39 999",
       oldPrice: "35 000",
       sale: "10",
-      retings: 3,
+      retings: 5,
     },
   ],
   beds: [],

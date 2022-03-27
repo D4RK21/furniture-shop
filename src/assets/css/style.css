@@ -152,8 +152,24 @@ body {
 }
 
 .header-bottom {
+  overflow: auto;
   background: #fff;
   border-top: 1px solid #979797;
+  scrollbar-width: thin;
+}
+
+.header-bottom::-webkit-scrollbar {
+  height: 6px;
+  background-color: #f9f9fd;
+}
+
+.header-bottom::-webkit-scrollbar-thumb {
+  background-color: #18aaaa;
+}
+
+.header-bottom::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9fd;
 }
 
 .header-bottom--inner {
@@ -185,8 +201,8 @@ body {
 }
 
 .banner-block--side {
-  width: 1000px;
-  height: 440px;
+  width: auto;
+  height: auto;
 }
 
 .banner-block--side img {
@@ -282,4 +298,10 @@ body {
 .product-list--all .product {
   border: none;
   margin-right: 40px;
+}
+
+@media screen and (max-width: 1300px) {
+  .no-mobile {
+    display: none;
+  }
 }

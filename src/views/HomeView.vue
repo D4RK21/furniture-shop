@@ -6,7 +6,15 @@
         <div class="banner-block--side">
           <img :src="require('@/assets/img/banner.jpg')" alt="" />
         </div>
-        <the-product />
+        <the-product
+          class="no-mobile"
+          title="Угловой диван Атланта Люкс рогожка Malmo серый"
+          price="32 999"
+          oldPrice="39 999"
+          sale="18"
+          :img="require('@/assets/img/product1.jpg')"
+          :retings="5"
+        />
       </div>
     </section>
     <section class="product-list">
