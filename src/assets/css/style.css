@@ -1,0 +1,285 @@
+/* ============== Normalized Style ====================== */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* ============== Main Style ====================== */
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  padding: 0 60px;
+}
+
+/* ============== HEADER Style ====================== */
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.header-top {
+  padding: 14px 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  margin-right: 24px;
+  margin-left: -10px;
+  width: 264px;
+  height: auto;
+}
+
+.header-buttons {
+  margin-top: 2px;
+}
+
+.btn-red {
+  font-size: 16px;
+  padding: 11px 18px;
+  color: #fff;
+  background: red;
+  border-radius: 6px;
+}
+
+.basket-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.basket-container span {
+  margin-top: 3px;
+  font-size: 10px;
+  color: #333;
+}
+
+.basket-container svg {
+  margin-left: 7px;
+  width: 24px;
+  height: 24px;
+}
+
+.header-bottom {
+  background: #fff;
+  border-top: 1px solid #979797;
+}
+
+.header-bottom--inner {
+  padding: 16px 0;
+}
+
+.header-bottom--links {
+  display: flex;
+}
+
+.header-bottom--link {
+  color: #333;
+  margin-right: 40px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* ============== Banner Style ====================== */
+
+.banner-block {
+  align-content: stretch;
+  font-size: 0;
+  padding: 32px 0;
+  padding-top: 150px;
+}
+
+.banner-block > .container {
+  justify-content: center;
+}
+
+.banner-block--side {
+  width: 1000px;
+  height: 440px;
+}
+
+.banner-block--side img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+/* ============== Product Style ====================== */
+
+.product {
+  border: solid 1px hsla(0, 0%, 83.9%, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 20px;
+  max-width: 312px;
+}
+.product-container {
+  margin-top: 40px;
+  text-align: center;
+}
+.product-img {
+  margin-bottom: 20px;
+}
+.product-img img {
+  width: 270px;
+  height: 150px;
+}
+.product-title {
+  font-size: 14px;
+  color: #333;
+  margin: 0 10px;
+  font-weight: 300;
+}
+.product-price {
+  display: flex;
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.product-ratings {
+  display: flex;
+  margin-top: 30px;
+  color: red;
+  font-size: 16px;
+  justify-content: center;
+}
+.old-price {
+  color: #979797;
+  font-weight: 300;
+  font-size: 14px;
+  margin-left: 10px;
+  text-decoration: line-through;
+}
+.product-sale {
+  margin-left: 10px;
+  display: table-caption;
+  background: red;
+  color: #fff;
+  font-size: 11px;
+  border-radius: 4px;
+  padding: 3px 5px;
+  font-weight: 300;
+}
+.product-btn {
+  padding: 0 10px;
+  margin-top: 40px;
+  width: 100%;
+}
+.btn-product {
+  width: 100%;
+}
+
+.product-list > .container {
+  display: block;
+}
+
+.product-list--title {
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+
+.product-list--all {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.product-list--all .product {
+  border: none;
+  margin-right: 40px;
+}
