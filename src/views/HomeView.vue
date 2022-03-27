@@ -14,7 +14,7 @@
           sale="18"
           :img="require('@/assets/img/product1.jpg')"
           :retings="5"
-          reviews="12"
+          reviews="12 отзывов"
         />
       </div>
     </section>
