@@ -24,9 +24,15 @@
       <div class="container">
         <div class="header-bottom--inner">
           <ul class="header-bottom--links">
-            <li class="header-bottom--link">Диваны</li>
-            <li class="header-bottom--link">Кровати</li>
-            <li class="header-bottom--link">Матрасы</li>
+            <li class="header-bottom--link">
+              <a href="#sofas"> Диваны </a>
+            </li>
+            <li class="header-bottom--link">
+              <a href="#beds"> Кровати </a>
+            </li>
+            <li class="header-bottom--link">
+              <a href="#mattresses"> Матрасы </a>
+            </li>
             <li class="header-bottom--link">Стенки</li>
             <li class="header-bottom--link">Шкафы</li>
             <li class="header-bottom--link">Кухни</li>

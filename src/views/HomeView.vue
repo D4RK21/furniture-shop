@@ -19,7 +19,7 @@
       </div>
     </section>
     <section class="product-list">
-      <div class="container">
+      <div class="container" id="sofas">
         <div class="product-list--title">Диваны</div>
         <div class="product-list--all">
           <the-product
@@ -35,7 +35,7 @@
           />
         </div>
       </div>
-      <div class="container">
+      <div class="container" id="#beds">
         <div class="product-list--title">Кровати</div>
         <div class="product-list--all">
           <the-product
@@ -51,7 +51,7 @@
           />
         </div>
       </div>
-      <div class="container">
+      <div class="container" id="mattresses">
         <div class="product-list--title">Матрасы</div>
         <div class="product-list--all">
           <the-product
