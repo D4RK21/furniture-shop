@@ -5,7 +5,7 @@
     </div>
     <div class="backet-item--title">
       <span>{{ title }}</span>
-      <button>Удалить</button>
+      <button @click="deleteProduct">Удалить</button>
     </div>
     <div class="backet-item--prices">
       <div class="item-prices--col">
@@ -22,7 +22,14 @@
 </template>
 
 <script>
+import { mapMutations } from "vuex";
 export default {
-  props: ["img", "title", "price", "oldPrice", "count"],
+  props: ["id", "img", "title", "price", "oldPrice", "count"],
+  methods: {
+    ...mapMutations(["dellProduct"]),
+    deleteProduct() {
+      this.dellProduct(this.id);
+    },
+  },
 };
 </script>

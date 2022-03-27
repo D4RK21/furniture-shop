@@ -11,7 +11,21 @@ export default createStore({
   },
   mutations: {
     addProduct: (state, product) => {
-      state.basket.push(product);
+      var push = true;
+      state.basket.forEach((item, index) => {
+        if (item.id === product.id) {
+          push = false;
+          return state.basket[index].count++;
+        }
+      });
+      if (push) state.basket.push(product);
+    },
+    dellProduct: (state, id) => {
+      state.basket.forEach((item, index) => {
+        if (item.id === id) {
+          state.basket.splice(index, 1);
+        }
+      });
     },
   },
   actions: {},

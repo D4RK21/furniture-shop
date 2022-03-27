@@ -23,11 +23,12 @@
 <script>
 import { mapMutations } from "vuex";
 export default {
-  props: ["title", "price", "sale", "oldPrice", "img", "retings", "reviews"],
+  props: ["id", "title", "price", "sale", "oldPrice", "img", "retings", "reviews"],
   methods: {
     ...mapMutations(["addProduct"]),
     addBasket() {
       this.addProduct({
+        id: this.id,
         title: this.title,
         price: this.price,
         sale: this.sale,
@@ -35,6 +36,7 @@ export default {
         img: this.img,
         retings: this.retings,
         reviews: this.reviews,
+        count: 1,
       });
     },
   },

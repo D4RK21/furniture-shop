@@ -23,8 +23,9 @@
         <div class="product-list--title">Диваны</div>
         <div class="product-list--all">
           <the-product
-            v-for="(item, index) in products.sofas"
-            :key="index"
+            v-for="item in products.sofas"
+            :key="item.id"
+            :id="item.id"
             :title="item.title"
             :price="item.price"
             :oldPrice="item.oldPrice"
@@ -39,8 +40,9 @@
         <div class="product-list--title">Кровати</div>
         <div class="product-list--all">
           <the-product
-            v-for="(item, index) in products.beds"
-            :key="index"
+            v-for="item in products.beds"
+            :key="item.id"
+            :id="item.id"
             :title="item.title"
             :price="item.price"
             :oldPrice="item.oldPrice"
@@ -55,8 +57,9 @@
         <div class="product-list--title">Матрасы</div>
         <div class="product-list--all">
           <the-product
-            v-for="(item, index) in products.mattresses"
-            :key="index"
+            v-for="item in products.mattresses"
+            :key="item.id"
+            :id="item.id"
             :title="item.title"
             :price="item.price"
             :oldPrice="item.oldPrice"
@@ -71,8 +74,9 @@
         <div class="product-list--title">Стенки</div>
         <div class="product-list--all">
           <the-product
-            v-for="(item, index) in products.walls"
-            :key="index"
+            v-for="item in products.walls"
+            :key="item.id"
+            :id="item.id"
             :title="item.title"
             :price="item.price"
             :oldPrice="item.oldPrice"
@@ -87,8 +91,9 @@
         <div class="product-list--title">Шкафы</div>
         <div class="product-list--all">
           <the-product
-            v-for="(item, index) in products.cabinets"
-            :key="index"
+            v-for="item in products.cabinets"
+            :key="item.id"
+            :id="item.id"
             :title="item.title"
             :price="item.price"
             :oldPrice="item.oldPrice"
@@ -103,8 +108,9 @@
         <div class="product-list--title">Кухни</div>
         <div class="product-list--all">
           <the-product
-            v-for="(item, index) in products.kitchens"
-            :key="index"
+            v-for="item in products.kitchens"
+            :key="item.id"
+            :id="item.id"
             :title="item.title"
             :price="item.price"
             :oldPrice="item.oldPrice"
@@ -119,8 +125,9 @@
         <div class="product-list--title">Столы</div>
         <div class="product-list--all">
           <the-product
-            v-for="(item, index) in products.tables"
-            :key="index"
+            v-for="item in products.tables"
+            :key="item.id"
+            :id="item.id"
             :title="item.title"
             :price="item.price"
             :oldPrice="item.oldPrice"
@@ -135,8 +142,9 @@
         <div class="product-list--title">Стулья</div>
         <div class="product-list--all">
           <the-product
-            v-for="(item, index) in products.armchairs"
-            :key="index"
+            v-for="item in products.armchairs"
+            :key="item.id"
+            :id="item.id"
             :title="item.title"
             :price="item.price"
             :oldPrice="item.oldPrice"
@@ -151,8 +159,9 @@
         <div class="product-list--title">Кресла</div>
         <div class="product-list--all">
           <the-product
-            v-for="(item, index) in products.chairs"
-            :key="index"
+            v-for="item in products.chairs"
+            :key="item.id"
+            :id="item.id"
             :title="item.title"
             :price="item.price"
             :oldPrice="item.oldPrice"
@@ -167,8 +176,9 @@
         <div class="product-list--title">Тумбы</div>
         <div class="product-list--all">
           <the-product
-            v-for="(item, index) in products.nightstands"
-            :key="index"
+            v-for="item in products.nightstands"
+            :key="item.id"
+            :id="item.id"
             :title="item.title"
             :price="item.price"
             :oldPrice="item.oldPrice"
@@ -183,8 +193,9 @@
         <div class="product-list--title">Пуфы</div>
         <div class="product-list--all">
           <the-product
-            v-for="(item, index) in products.puffs"
-            :key="index"
+            v-for="item in products.puffs"
+            :key="item.id"
+            :id="item.id"
             :title="item.title"
             :price="item.price"
             :oldPrice="item.oldPrice"
@@ -199,8 +210,9 @@
         <div class="product-list--title">Комоды</div>
         <div class="product-list--all">
           <the-product
-            v-for="(item, index) in products.dressers"
-            :key="index"
+            v-for="item in products.dressers"
+            :key="item.id"
+            :id="item.id"
             :title="item.title"
             :price="item.price"
             :oldPrice="item.oldPrice"
@@ -215,8 +227,9 @@
         <div class="product-list--title">Распродажа</div>
         <div class="product-list--all">
           <the-product
-            v-for="(item, index) in products.sale"
-            :key="index"
+            v-for="item in products.sale"
+            :key="item.id"
+            :id="item.id"
             :title="item.title"
             :price="item.price"
             :oldPrice="item.oldPrice"

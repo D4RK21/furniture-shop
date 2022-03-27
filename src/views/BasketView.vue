@@ -14,11 +14,12 @@
         <basket-item
           v-for="(item, index) in items"
           :key="index"
+          :id="item.id"
           :title="item.title"
           :price="item.price"
           :oldPrice="item.oldPrice"
           :img="item.img"
-          :count="1"
+          :count="item.count"
         />
       </div>
       <div class="summary" v-if="items.length != 0">
@@ -202,7 +203,7 @@ export default {
   },
   data: () => {
     return {
-      items: ["1"],
+      items: [],
       totalSum: 0,
       isCourier: true,
     };
