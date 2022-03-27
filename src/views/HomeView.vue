@@ -14,6 +14,7 @@
           sale="18"
           :img="require('@/assets/img/product1.jpg')"
           :retings="5"
+          reviews="12"
         />
       </div>
     </section>
@@ -30,6 +31,39 @@
             :sale="item.sale"
             :img="item.img"
             :retings="item.retings"
+            :reviews="item.reviews"
+          />
+        </div>
+      </div>
+      <div class="container">
+        <div class="product-list--title">Кровати</div>
+        <div class="product-list--all">
+          <the-product
+            v-for="(item, index) in products.beds"
+            :key="index"
+            :title="item.title"
+            :price="item.price"
+            :oldPrice="item.oldPrice"
+            :sale="item.sale"
+            :img="item.img"
+            :retings="item.retings"
+            :reviews="item.reviews"
+          />
+        </div>
+      </div>
+      <div class="container">
+        <div class="product-list--title">Матрасы</div>
+        <div class="product-list--all">
+          <the-product
+            v-for="(item, index) in products.mattresses"
+            :key="index"
+            :title="item.title"
+            :price="item.price"
+            :oldPrice="item.oldPrice"
+            :sale="item.sale"
+            :img="item.img"
+            :retings="item.retings"
+            :reviews="item.reviews"
           />
         </div>
       </div>

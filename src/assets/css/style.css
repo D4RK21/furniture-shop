@@ -278,6 +278,16 @@ body {
 .btn-product {
   width: 100%;
 }
+.reviews-ratings {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #979797;
+  line-height: 25px;
+}
+.product-ratings span {
+  margin-top: 3px;
+}
 
 .product-list > .container {
   display: block;
@@ -286,13 +296,16 @@ body {
 .product-list--title {
   font-size: 36px;
   font-weight: 300;
-  margin-bottom: 32px;
+  margin: 32px 0;
+  padding-bottom: 15px;
+  margin-left: 75px;
 }
 
 .product-list--all {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  justify-content: space-around;
 }
 
 .product-list--all .product {
