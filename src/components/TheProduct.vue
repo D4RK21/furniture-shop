@@ -11,7 +11,7 @@
       </div>
       <div class="product-ratings">
         <span v-for="(reting, index) in retings" :key="index">★</span>
-        <div class="reviews-ratings">{{ reviews }} отзывов</div>
+        <div class="reviews-ratings">{{ reviews }}</div>
       </div>
       <div class="product-btn">
         <button type="button" class="btn-red btn-product">В корзину</button>
