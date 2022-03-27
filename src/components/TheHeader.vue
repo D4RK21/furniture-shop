@@ -9,6 +9,7 @@
         </div>
         <div class="header-buttons" v-if="bottom">
           <button type="button" class="btn-red"><a href="#contact">Контакты</a></button>
+          <button type="button" class="btn-red"><a href="#warranty">Гарантии</a></button>
         </div>
       </div>
       <div class="container">

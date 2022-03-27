@@ -129,6 +129,7 @@ body {
 }
 
 .header-buttons {
+  display: flex;
   margin-top: 2px;
 }
 
@@ -785,6 +786,14 @@ body {
 .contacts-ul li p {
   font-weight: 300;
   font-size: 18px;
+}
+
+.header-buttons > button {
+  margin-right: 10px;
+}
+
+.warranty-ul li h2 {
+  margin-bottom: 20px;
 }
 
 /* ============== Media ====================== */
