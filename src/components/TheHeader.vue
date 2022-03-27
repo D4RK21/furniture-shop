@@ -3,7 +3,9 @@
     <div class="header-top">
       <div class="container">
         <div class="header-logo">
-          <img :src="require('@/assets/img/logo.svg')" alt="" />
+          <a href="">
+            <img :src="require('@/assets/img/logo.svg')" alt="" />
+          </a>
         </div>
         <div class="header-buttons">
           <button type="button" class="btn-red">Акции</button>

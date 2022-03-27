@@ -146,6 +146,12 @@ body {
 .basket-container {
   display: flex;
   flex-direction: column;
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+
+.basket-container:hover {
+  opacity: 0.7;
 }
 
 .basket-container span {
@@ -163,7 +169,7 @@ body {
 .header-bottom {
   overflow: auto;
   background: #fff;
-  border-top: 1px solid #979797;
+  border-top: 1px solid #c7c7c7;
   scrollbar-width: thin;
 }
 
@@ -331,8 +337,34 @@ body {
   margin-right: 40px;
 }
 
+/* ============== Media ====================== */
+
 @media screen and (max-width: 1300px) {
   .no-mobile {
     display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    padding: 0 20px;
+  }
+  .header-top {
+    padding: 14px 20px;
+  }
+  .header-top .container {
+    padding: 0px;
+  }
+  .header-logo {
+    width: 225px;
+  }
+  .header-buttons {
+    display: none;
+  }
+  .product-list--title {
+    text-align: center;
+    padding-bottom: 0px;
+    margin-left: 0px;
+    margin: 30px 0;
   }
 }

@@ -35,7 +35,7 @@
           />
         </div>
       </div>
-      <div class="container" id="#beds">
+      <div class="container" id="beds">
         <div class="product-list--title">Кровати</div>
         <div class="product-list--all">
           <the-product
