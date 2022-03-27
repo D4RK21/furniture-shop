@@ -262,27 +262,33 @@ export default {
   mounted() {
     $(document).ready(function () {
       $(".btn-product").click(function () {
-        const imgContainer = $(this).parent().parent().find(".product-img");
+        const cart = $(".basket-container");
         const img = $(this).parent().parent().find(".product-img").children();
         img
           .clone()
-          // .offset({
-          //   top: 0,
-          //   left: 0,
-          // })
-          .css({ position: "fixed", "z-index": "1000" })
-          .appendTo(imgContainer)
+          .offset({
+            top: img.offset().top,
+            left: img.offset().left,
+          })
+          .css({
+            opacity: "0.5",
+            width: "270px",
+            height: "150px",
+            position: "absolute",
+            "z-index": "100",
+          })
+          .appendTo($("body"))
           .animate(
             {
-              bottom: 0,
-              left: 0,
+              top: cart.offset().top + 10,
+              left: cart.offset().left + 10,
               opacity: 0,
-              width: 80,
-              height: 60,
+              width: 70,
+              height: 50,
             },
-            1500,
+            800,
             function () {
-              // $(this).remove();
+              $(this).remove();
             }
           );
       });

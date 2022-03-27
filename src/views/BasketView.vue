@@ -209,6 +209,7 @@ export default {
     };
   },
   mounted() {
+    window.scrollTo(0, 0);
     this.items = this.getProducts;
     this.items.forEach((item) => {
       this.totalSum += Number(item.price.replace(" ", ""));
