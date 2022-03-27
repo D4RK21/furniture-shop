@@ -179,7 +179,7 @@ body {
 }
 
 .header-bottom::-webkit-scrollbar-thumb {
-  background-color: #18aaaa;
+  background-color: #f51818;
 }
 
 .header-bottom::-webkit-scrollbar-track {
@@ -320,8 +320,7 @@ body {
 .product-list--title {
   font-size: 34px;
   font-weight: 300;
-  margin: 32px 0;
-  padding-bottom: 15px;
+  margin: 40px 0px 15px 0px;
   margin-left: 75px;
 }
 
@@ -365,6 +364,6 @@ body {
     text-align: center;
     padding-bottom: 0px;
     margin-left: 0px;
-    margin: 30px 0;
+    margin: 30px 0px 10px 0px;
   }
 }

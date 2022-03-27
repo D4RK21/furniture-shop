@@ -35,16 +35,36 @@
             <li class="header-bottom--link">
               <a href="#mattresses"> Матрасы </a>
             </li>
-            <li class="header-bottom--link">Стенки</li>
-            <li class="header-bottom--link">Шкафы</li>
-            <li class="header-bottom--link">Кухни</li>
-            <li class="header-bottom--link">Столы</li>
-            <li class="header-bottom--link">Стулья</li>
-            <li class="header-bottom--link">Кресла</li>
-            <li class="header-bottom--link">Тумбы</li>
-            <li class="header-bottom--link">Пуфы</li>
-            <li class="header-bottom--link">Комоды</li>
-            <li class="header-bottom--link">Распродажа</li>
+            <li class="header-bottom--link">
+              <a href="#walls"> Стенки </a>
+            </li>
+            <li class="header-bottom--link">
+              <a href="#cabinets"> Шкафы </a>
+            </li>
+            <li class="header-bottom--link">
+              <a href="#kitchens"> Кухни </a>
+            </li>
+            <li class="header-bottom--link">
+              <a href="#tables"> Столы </a>
+            </li>
+            <li class="header-bottom--link">
+              <a href="#armchairs"> Стулья </a>
+            </li>
+            <li class="header-bottom--link">
+              <a href="#chairs"> Кресла </a>
+            </li>
+            <li class="header-bottom--link">
+              <a href="#nightstands"> Тумбы </a>
+            </li>
+            <li class="header-bottom--link">
+              <a href="#puffs"> Пуфы </a>
+            </li>
+            <li class="header-bottom--link">
+              <a href="#dressers"> Комоды </a>
+            </li>
+            <li class="header-bottom--link">
+              <a href="#sale"> Распродажа </a>
+            </li>
           </ul>
         </div>
       </div>

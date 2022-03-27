@@ -7,6 +7,11 @@ const routes = [
     name: "home",
     component: HomeView,
   },
+  // {
+  //   path: "",
+  //   name: "shoppingCart",
+  //   component: ShoppingCart,
+  // },
 ];
 
 const router = createRouter({
