@@ -1,16 +1,26 @@
 <template>
-  <the-header />
+  <the-header :bottom="false" />
   <main class="page-content">
     <section class="basket">
       <div class="section-title">Корзина</div>
       <div class="no-items" v-if="items.length === 0">
         <img :src="require('@/assets/img/cart-empty.svg')" class="no-items-logo" />
         <div class="no-items-text">В корзине нет товаров</div>
-        <a href="/">
+        <router-link to="/">
           <button type="button" class="btn-red">На главную</button>
-        </a>
+        </router-link>
       </div>
-      <div class="items" v-else></div>
+      <div class="items" v-else>
+        <basket-item
+          v-for="(item, index) in items"
+          :key="index"
+          :title="item.title"
+          :price="item.price"
+          :oldPrice="item.oldPrice"
+          :img="item.img"
+          :count="1"
+        />
+      </div>
     </section>
     <section class="checkout" v-if="items.length != 0">
       <form>
@@ -119,24 +129,24 @@
 
 <script>
 import TheHeader from "@/components/TheHeader.vue";
+import BasketItem from "@/components/BasketItem.vue";
+import { mapGetters } from "vuex";
 export default {
+  computed: {
+    ...mapGetters(["getProducts"]),
+  },
   components: {
     TheHeader,
+    BasketItem,
   },
   data: () => {
     return {
-      items: [1, 2, 3],
+      items: ["1"],
       isCourier: true,
     };
   },
+  mounted() {
+    this.items = this.getProducts;
+  },
 };
 </script>
-
-<style>
-.header {
-  position: inherit !important;
-}
-.header-bottom {
-  display: none;
-}
-</style>

@@ -1,5 +1,5 @@
 <template>
-  <the-header />
+  <the-header :bottom="true" />
   <main class="page-content">
     <section class="banner-block">
       <div class="container">

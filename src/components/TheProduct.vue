@@ -14,16 +14,29 @@
         <div class="reviews-ratings">{{ reviews }}</div>
       </div>
       <div class="product-btn">
-        <button type="button" class="btn-red btn-product">В корзину</button>
+        <button type="button" class="btn-red btn-product" @click="addBasket">В корзину</button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { mapMutations } from "vuex";
 export default {
   props: ["title", "price", "sale", "oldPrice", "img", "retings", "reviews"],
+  methods: {
+    ...mapMutations(["addProduct"]),
+    addBasket() {
+      this.addProduct({
+        title: this.title,
+        price: this.price,
+        sale: this.sale,
+        oldPrice: this.oldPrice,
+        img: this.img,
+        retings: this.retings,
+        reviews: this.reviews,
+      });
+    },
+  },
 };
 </script>
-
-<style></style>

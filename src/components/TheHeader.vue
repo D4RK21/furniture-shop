@@ -3,16 +3,16 @@
     <div class="header-top">
       <div class="container">
         <div class="header-logo">
-          <a href="/">
+          <router-link to="/">
             <img :src="require('@/assets/img/logo.svg')" alt="" />
-          </a>
+          </router-link>
         </div>
         <div class="header-buttons">
           <button type="button" class="btn-red">Акции</button>
         </div>
       </div>
       <div class="container">
-        <a href="/basket">
+        <router-link to="/basket">
           <div class="basket-container">
             <svg>
               <path
@@ -21,10 +21,10 @@
             </svg>
             <span>Корзина</span>
           </div>
-        </a>
+        </router-link>
       </div>
     </div>
-    <div class="header-bottom">
+    <div class="header-bottom" v-if="bottom">
       <div class="container">
         <div class="header-bottom--inner">
           <ul class="header-bottom--links">
@@ -73,3 +73,9 @@
     </div>
   </header>
 </template>
+
+<script>
+export default {
+  props: ["bottom"],
+};
+</script>

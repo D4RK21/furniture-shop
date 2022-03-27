@@ -365,7 +365,7 @@ body {
 /* ============== Basket ====================== */
 
 .basket {
-  padding: 40px 40px 50px 40px;
+  padding: 100px 40px 50px 40px;
   width: 100%;
   max-width: 1200px;
   margin: auto;
@@ -545,6 +545,95 @@ body {
 }
 .checkbox input:checked + .danger:after {
   border-color: #f44336;
+}
+
+/* ============== Item Basket ====================== */
+
+.items {
+  padding: 24px 0;
+  border-bottom: 1px solid hsla(0, 0%, 59.2%, 0.6);
+}
+
+.backet-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 16px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  color: #333;
+}
+
+.backet-item--img {
+  margin-right: 40px;
+  min-width: 200px;
+  width: 200px;
+}
+
+.backet-item--img img {
+  width: 100%;
+  height: 100%;
+}
+
+.backet-item--title {
+  width: 100%;
+}
+
+.backet-item--title span {
+  display: flex;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.42;
+  text-align: left;
+  padding-right: 8px;
+  margin-bottom: 10px;
+}
+.backet-item--title button {
+  display: flex;
+  font-weight: 300;
+  font-size: 14px;
+  border: none;
+  background: none;
+}
+
+.backet-item--prices {
+  display: flex;
+  font-weight: 300;
+  align-items: center;
+  margin-bottom: 16px;
+  white-space: nowrap;
+}
+
+.prices-col-new {
+  font-size: 20px;
+  white-space: nowrap;
+}
+.prices-col-old {
+  display: flex;
+  font-size: 16px;
+  margin-bottom: 0;
+  font-weight: 400;
+  color: #979797;
+  text-decoration: line-through;
+}
+
+.item-prices--col {
+  margin: 0 50px;
+}
+
+.item-prices--count {
+  display: flex;
+  margin-right: 40px;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.item-prices--resprice {
+  display: flex;
+  font-size: 24px;
+  font-weight: 400;
+  margin-left: 8px;
 }
 
 /* ============== Media ====================== */
