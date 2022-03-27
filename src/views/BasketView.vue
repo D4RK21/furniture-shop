@@ -24,7 +24,7 @@
       <div class="summary" v-if="items.length != 0">
         <div class="summary-item">
           <span>Товары</span>
-          <span>{{ totalSum }}&nbsp;₽</span>
+          <span>{{ totalSum.toLocaleString() }}&nbsp;₽</span>
         </div>
         <div class="summary-item">
           <span>Скидка по акции</span>
@@ -32,7 +32,7 @@
         </div>
         <div class="summary-item bold">
           <span>Итого</span>
-          <span>{{ totalSum }}&nbsp;₽</span>
+          <span>{{ totalSum.toLocaleString() }}&nbsp;₽</span>
         </div>
         <a href="#checkout" class="summary-btn">
           <button class="btn-red outlined summary-btn">Перейти к оформлению</button>
@@ -134,7 +134,7 @@
           <div class="summary">
             <div class="summary-item">
               <span>Товары</span>
-              <span>{{ totalSum }}&nbsp;₽</span>
+              <span>{{ totalSum.toLocaleString() }}&nbsp;₽</span>
             </div>
             <div class="summary-item">
               <span>Скидка по акции</span>
@@ -142,7 +142,7 @@
             </div>
             <div class="summary-item bold">
               <span>Итого к оплате</span>
-              <span>{{ totalSum }}&nbsp;₽</span>
+              <span>{{ totalSum.toLocaleString() }}&nbsp;₽</span>
             </div>
             <button type="submit" class="btn-red summary-btn">Оформить заказ</button>
             <div class="services">
